@@ -1,0 +1,42 @@
+/* collapsible section changes*/
+h2 button {
+    all: inherit;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5em 0;
+}
+  
+h2 button:focus svg {
+    outline: 2px solid;
+}
+
+button svg {
+    height: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+[aria-expanded="true"] .vert {
+    display: none;
+    }
+
+[aria-expanded] rect {
+    fill: currentColor;
+}
+
+div.toc > ul {
+    height: 40vh;
+    overflow-y: scroll;
+}
+
+div.toc {
+    position: fixed;
+    top: 50vh;
+}
+
+div.main-content + h2 {
+    position: absolute;
+    top: 300px; 
+}
