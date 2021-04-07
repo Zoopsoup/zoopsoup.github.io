@@ -40,3 +40,38 @@ div.main-content + h2 {
     position: absolute;
     top: 300px; 
 }
+
+/* photo column changes */
+div.right-box {
+    float: right;
+    clear: right;
+    height: 400px;
+    overflow: scroll;
+}
+
+div.text-column {
+    margin: 0.5em 0;
+    display: table-cell;
+    vertical-align: top;
+}
+div.photo-column {
+    border: 1px solid #c8ccd1;
+    padding: 3px;
+    background-color: #f8f9fa;
+    font-size: 94%;
+    display: table-cell;
+}
+
+div.container {
+    display: table-row;
+}
+.image {
+    display: block;
+    text-align: center;
+}
+
+div.photo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 250px;
+}
