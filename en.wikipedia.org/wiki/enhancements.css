@@ -75,3 +75,62 @@ div.photo {
     margin-bottom: 25px;
     width: 250px;
 }
+
+/* dark mode changes */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-mode div.toc {
+  background-color: black;
+  color: white;
+}
+.dark-mode .mw-body {
+  background-color: black;
+  color: white;
+}
+.dark-mode .mw-body .firstHeading {
+  background-color: black;
+  color: white;
+}
+.dark-mode .infobox {
+  background-color: black;
+  color: white;
+}
+.dark-mode .infobox {
+  background-color: black;
+  color: white;
+}
+.dark-mode .mw-parser-output .sidebar {
+  background-color: black;
+  color: white;
+}
+.dark-mode .catlinks {
+  background-color: black;
+  color: white;
+}
+.dark-mode #mw-head {
+  background-color: black;
+  color: white;
+}
+.dark-mode a {
+  color: DodgerBlue;
+}
+.dark-mode h2 button {
+  color: white;
+}
+.dark-mode div.photo-column {
+  background-color: black;
+  color: white;
+}
+.dark-mode .vector-menu-portal .vector-menu-content li a {
+    color: DodgerBlue;
+}
+.dark-mode .vector-menu-tabs {
+  background-image: none;
+  background-color: black;
+  color: white;
+}
+.dark-mode .mw-wiki-logo {
+  background-image: url(enwiki.png);
+}

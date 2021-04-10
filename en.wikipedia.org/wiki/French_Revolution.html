@@ -15,6 +15,7 @@
 <meta name="ResourceLoaderDynamicStyles" content=""/>
 <link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
 <link rel="stylesheet" href="enhancements.css"/>
+<link rel="stylesheet" href="toggle.css"/>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <meta name="generator" content="MediaWiki 1.36.0-wmf.37"/>
 <meta name="referrer" content="origin"/>
@@ -2798,7 +2799,10 @@ Transclusion expansion time report (%,ms,calls,template)
 		<span>Views</span>
 	</h3>
 	<div class="vector-menu-content">
-		<ul class="vector-menu-content-list"><li id="ca-view" class="selected"><a href="French_Revolution">Read</a></li><li id="ca-viewsource"><a href="https://en.wikipedia.org/w/index.php?title=French_Revolution&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="https://en.wikipedia.org/w/index.php?title=French_Revolution&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		<label class="switch">
+  <input type="checkbox" onchange="darkMode()">
+  <span class="slider round"></span>
+</label><ul class="vector-menu-content-list"><li id="ca-view" class="selected"><a href="French_Revolution">Read</a></li><li id="ca-viewsource"><a href="https://en.wikipedia.org/w/index.php?title=French_Revolution&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="https://en.wikipedia.org/w/index.php?title=French_Revolution&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
 		
 	</div>
 </nav>
@@ -3010,4 +3014,9 @@ additional terms may apply.  By using this site, you agree to the <a href="https
 		}
 	})
 	})()
+
+	function darkMode() {
+   	var element = document.body;
+   	element.classList.toggle("dark-mode");
+}
 </script>
