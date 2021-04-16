@@ -1,3 +1,7 @@
+p {
+  text-align:justify;
+}
+
 /* collapsible section changes*/
 h2 button {
     all: inherit;
@@ -134,3 +138,42 @@ div.photo {
 .dark-mode .mw-wiki-logo {
   background-image: url(enwiki.png);
 }
+
+.mw-wiki-logo{
+  /*max-width: 50%;*/
+  height: auto;
+
+}
+
+.dark-mode .collapsible {
+  background-color: black;
+  color: white;
+  opacity:1;
+}
+
+.collapsible {
+  background-color: #f6f6f6;
+  cursor: pointer;
+  padding: 0px;
+  border: none;
+  text-align: right;
+  outline: none;
+  position:relative;
+  float:right;
+  top:-20px;
+  opacity:0.50;
+}
+
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 10px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
