@@ -164,6 +164,16 @@ div.photo {
   opacity:0.50;
 }
 
+.vector-menu-content.sidebar {
+  display:none;
+}
+
+/*
+.vector-menu-content.main-col {
+  display:block;
+}
+*/
+
 
 .collapsible:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */

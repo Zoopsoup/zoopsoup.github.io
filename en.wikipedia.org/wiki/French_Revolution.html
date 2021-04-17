@@ -2861,7 +2861,7 @@ Transclusion expansion time report (%,ms,calls,template)
 		<span>Contribute</span>
 	</h3>
 	<button type="button" class = "collapsible"></button>
-	<div class="vector-menu-content">
+	<div class="vector-menu-content sidebar">
 		<ul class="vector-menu-content-list"><li id="n-help"><a href="https://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-introduction"><a href="https://en.wikipedia.org/wiki/Help:Introduction" title="Learn how to edit Wikipedia">Learn to edit</a></li><li id="n-portal"><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="The hub for editors">Community portal</a></li><li id="n-recentchanges"><a href="https://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r">Recent changes</a></li><li id="n-upload"><a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia">Upload file</a></li></ul>
 		
 	</div>
@@ -2873,7 +2873,7 @@ Transclusion expansion time report (%,ms,calls,template)
 		<span>Tools</span>
 	</h3>
 	<button type="button" class = "collapsible"></button>
-	<div class="vector-menu-content">
+	<div class="vector-menu-content sidebar">
 		<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/French_Revolution" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/French_Revolution" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="https://en.wikipedia.org/w/index.php?title=French_Revolution&amp;oldid=1015422255" title="Permanent link to this revision of this page">Permanent link</a></li><li id="t-info"><a href="https://en.wikipedia.org/w/index.php?title=French_Revolution&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=French_Revolution&amp;id=1015422255&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q6534" title="Structured data on this page hosted by Wikidata [g]" accesskey="g">Wikidata item</a></li></ul>
 		
 	</div>
@@ -2885,7 +2885,7 @@ Transclusion expansion time report (%,ms,calls,template)
 		<span>Print/export</span>
 	</h3>
 	<button type="button" class = "collapsible"></button>
-	<div class="vector-menu-content">
+	<div class="vector-menu-content sidebar">
 		<ul class="vector-menu-content-list"><li id="coll-download-as-rl"><a href="https://en.wikipedia.org/w/index.php?title=Special:DownloadAsPdf&amp;page=French_Revolution&amp;action=show-download-screen" title="Download this page as a PDF file">Download as PDF</a></li><li id="t-print"><a href="https://en.wikipedia.org/w/index.php?title=French_Revolution&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
 		
 	</div>
@@ -2897,7 +2897,7 @@ Transclusion expansion time report (%,ms,calls,template)
 		<span>In other projects</span>
 	</h3>
 	<button type="button" class = "collapsible"></button>
-	<div class="vector-menu-content">
+	<div class="vector-menu-content sidebar">
 		<ul class="vector-menu-content-list"><li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:French_Revolution" hreflang="en">Wikimedia Commons</a></li><li class="wb-otherproject-link wb-otherproject-wikibooks"><a href="https://en.wikibooks.org/wiki/French_History/French_Revolution" hreflang="en">Wikibooks</a></li><li class="wb-otherproject-link wb-otherproject-wikiquote"><a href="https://en.wikiquote.org/wiki/French_Revolution" hreflang="en">Wikiquote</a></li></ul>
 		
 	</div>
@@ -2910,7 +2910,7 @@ Transclusion expansion time report (%,ms,calls,template)
 		<span>Languages</span>
 	</h3>
 	<button type="button" class = "collapsible"></button>
-	<div class="vector-menu-content">
+	<div class="vector-menu-content sidebar">
 		<ul class="vector-menu-content-list">
 			<li class="interlanguage-link interwiki-de">
 				<a href="https://de.wikipedia.org/wiki/Franz%C3%B6sische_Revolution" title="Französische Revolution – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a>
@@ -3065,6 +3065,7 @@ additional terms may apply.  By using this site, you agree to the <a href="https
 }
 </script>
 <!--Colapsibal sidbar script-->
+<!--
 <script>
 	var coll = document.getElementsByClassName("collapsible");
 	var i;
@@ -3077,6 +3078,24 @@ additional terms may apply.  By using this site, you agree to the <a href="https
 	      content.style.display = "block";
 	    } else {
 	      content.style.display = "none";
+	    }
+	  });
+	}
+</script>
+-->
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var content = this.nextElementSibling;
+	    if (content.style.display === "block") {
+	      content.style.display = "none";
+	    } else {
+	      content.style.display = "block";
 	    }
 	  });
 	}
