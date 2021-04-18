@@ -22,6 +22,26 @@ button svg {
     margin-right: 0.5em;
 }
 
+.controls {
+  text-align: right;
+  margin-bottom: 1em;
+  position: relative;
+  top: 20px;
+  right: 10px;
+}
+ 
+ .controls li {
+   display: inline;
+}
+
+.controls button {
+  background: rgb(95, 114, 155);
+  color: #fff;
+  border: 0;
+  font-size: 0.85rem;
+  border-radius: 0.25rem;
+}
+
 [aria-expanded="true"] .vert {
     display: none;
     }
@@ -64,6 +84,8 @@ div.photo-column {
     background-color: #f8f9fa;
     font-size: 94%;
     display: table-cell;
+    position: relative;
+    left: 10px;
 }
 
 div.container {
