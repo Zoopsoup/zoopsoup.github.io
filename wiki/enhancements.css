@@ -1,0 +1,189 @@
+p {
+  text-align:justify;
+}
+
+/* collapsible section changes*/
+h2 button {
+    all: inherit;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5em 0;
+}
+  
+h2 button:focus svg {
+    outline: 2px solid;
+}
+
+button svg {
+    height: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+[aria-expanded="true"] .vert {
+    display: none;
+    }
+
+[aria-expanded] rect {
+    fill: currentColor;
+}
+
+div.toc > ul {
+    height: 40vh;
+    overflow-y: scroll;
+}
+
+div.toc {
+    position: fixed;
+    top: 50vh;
+}
+
+div.main-content + h2 {
+    position: absolute;
+    top: 300px; 
+}
+
+/* photo column changes */
+div.right-box {
+    float: right;
+    clear: right;
+    height: 400px;
+    overflow: scroll;
+}
+
+div.text-column {
+    margin: 0.5em 0;
+    display: table-cell;
+    vertical-align: top;
+}
+div.photo-column {
+    border: 1px solid #c8ccd1;
+    padding: 3px;
+    background-color: #f8f9fa;
+    font-size: 94%;
+    display: table-cell;
+}
+
+div.container {
+    display: table-row;
+}
+.image {
+    display: block;
+    text-align: center;
+}
+
+div.photo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 250px;
+}
+
+/* dark mode changes */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-mode div.toc {
+  background-color: black;
+  color: white;
+}
+.dark-mode .mw-body {
+  background-color: black;
+  color: white;
+}
+.dark-mode .mw-body .firstHeading {
+  background-color: black;
+  color: white;
+}
+.dark-mode .infobox {
+  background-color: black;
+  color: white;
+}
+.dark-mode .infobox {
+  background-color: black;
+  color: white;
+}
+.dark-mode .mw-parser-output .sidebar {
+  background-color: black;
+  color: white;
+}
+.dark-mode .catlinks {
+  background-color: black;
+  color: white;
+}
+.dark-mode #mw-head {
+  background-color: black;
+  color: white;
+}
+.dark-mode a {
+  color: DodgerBlue;
+}
+.dark-mode h2 button {
+  color: white;
+}
+.dark-mode div.photo-column {
+  background-color: black;
+  color: white;
+}
+.dark-mode .vector-menu-portal .vector-menu-content li a {
+    color: DodgerBlue;
+}
+.dark-mode .vector-menu-tabs {
+  background-image: none;
+  background-color: black;
+  color: white;
+}
+.dark-mode .mw-wiki-logo {
+  background-image: url(enwiki.png);
+}
+
+.mw-wiki-logo{
+  /*max-width: 50%;*/
+  height: auto;
+
+}
+
+.dark-mode .collapsible {
+  background-color: black;
+  color: white;
+  opacity:1;
+}
+
+.collapsible {
+  background-color: #f6f6f6;
+  cursor: pointer;
+  padding: 0px;
+  border: none;
+  text-align: right;
+  outline: none;
+  position:relative;
+  float:right;
+  top:-20px;
+  opacity:0.50;
+}
+
+.vector-menu-content.sidebar {
+  display:none;
+}
+
+/*
+.vector-menu-content.main-col {
+  display:block;
+}
+*/
+
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 10px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
