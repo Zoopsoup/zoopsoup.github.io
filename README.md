@@ -1,1 +1,0 @@
-Updated Wikipedia article for the Human-Computer Interaction group project.
